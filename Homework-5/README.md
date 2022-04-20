@@ -79,8 +79,19 @@ Configure a log rotation scheme that backs up authentication messages to the /va
 
 Add your config file edits below:
 
+        sudo nano /etc/logrotate.conf
 
-[Your logrotate scheme edits here]
+![logrotate.cof](Image/logrotate.conf.png)
+
+
+[/var/log/auth.log {
+    missingok
+    weekly
+    rotate 7
+    notifempty
+    delaycompress
+}
+]
 
 
 
