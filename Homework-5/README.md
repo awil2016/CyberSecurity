@@ -22,6 +22,11 @@ Command to create the Javaless_Doc.tar archive from the TarDocs/ directory, whil
 
 Command to ensure Java/ is not in the new Javaless_Docs.tar archive:
 
+        tar tvvf Javaless_Docs.tar | grep Java
+
+
+![java](Image/java.png)
+
 
 
 
@@ -31,7 +36,7 @@ Step 2: Create, Manage, and Automate Cron Jobs
 
 Cron job for backing up the /var/log/auth.log file:
 
-
+        
 
 Step 3: Write Basic Bash Scripts
 
