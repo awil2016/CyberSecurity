@@ -10,6 +10,7 @@ Command to extract the tTarDocs.tar archive to the current directory:
 
 Command to create the Javaless_Doc.tar archive from the TarDocs/ directory, while excluding the TarDocs/Documents/Java directory:
 
+        tar cvvf Javaless_Docs.tar --exclude="TarDocs/Documents/Java" TarDocs/
 
 Command to ensure Java/ is not in the new Javaless_Docs.tar archive:
 
