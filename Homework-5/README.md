@@ -38,20 +38,25 @@ Cron job for backing up the /var/log/auth.log file:
 
         crontab-e
 
-![crontab-e](Image/crontab-e.png)
+![createcron](Image/createcron.png)
 
         
 
 Step 3: Write Basic Bash Scripts
 
-crontab-e
+crontab-eC:\Users\hacker\CyberSecurity-101A\Homework-5\Image\createcron.png
 Brace expansion command to create the four subdirectories:
 
 
 Paste your system.sh script edits below:
 
 #!/bin/bash
-[Your solution script contents here]
+
+
+        [0 6 * * */4 tar -zcf /auth_backup.tgz /var/log/auth.log]
+
+
+![crontab-e](Image/crontab-e.png)
 
 
 
