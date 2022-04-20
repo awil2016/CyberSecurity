@@ -36,11 +36,15 @@ Step 2: Create, Manage, and Automate Cron Jobs
 
 Cron job for backing up the /var/log/auth.log file:
 
+        crontab-e
+
+![crontab-e](Image/crontab-e.png)
+
         
 
 Step 3: Write Basic Bash Scripts
 
-
+crontab-e
 Brace expansion command to create the four subdirectories:
 
 
