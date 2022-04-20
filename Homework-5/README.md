@@ -64,13 +64,10 @@ Paste your system.sh script edits below:
 Command to make the system.sh script executable:
 
 
-Optional
+        sudo ./system.sh
 
-Commands to test the script and confirm its execution:
 
-Bonus
-
-Command to copy system to system-wide cron directory:
+![system-sh](Image/system-sh.png)
 
 
 
@@ -90,67 +87,27 @@ Add your config file edits below:
 
 
 
-Bonus: Check for Policy and File Violations
-
-
-Command to verify auditd is active:
-
-
-Command to set number of retained logs and maximum log file size:
-
-Add the edits made to the configuration file below:
-
-
-[Your solution edits here]
 
 
 
 
-Command using auditd to set rules for /etc/shadow, /etc/passwd and /var/log/auth.log:
-
-Add the edits made to the rules file below:
-
-
-[Your solution edits here]
 
 
 
 
-Command to restart auditd:
-
-
-Command to list all auditd rules:
-
-
-Command to produce an audit report:
-
-
-Create a user with sudo useradd attacker and produce an audit report that lists account modifications:
-
-
-Command to use auditd to watch /var/log/cron:
-
-
-Command to verify auditd rules:
 
 
 
 
-Bonus (Research Activity): Perform Various Log Filtering Techniques
 
 
-Command to return journalctl messages with priorities from emergency to error:
 
 
-Command to check the disk usage of the system journal unit since the most recent boot:
 
 
-Comand to remove all archived journal files except the most recent two:
 
 
-Command to filter all log messages with priority levels between zero and two, and save output to /home/sysadmin/Priority_High.txt:
 
 
-Command to automate the last command in a daily cronjob. Add the edits made to the crontab file below:
 
-[Your solution cron edits here]
+
