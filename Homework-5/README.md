@@ -69,6 +69,7 @@ Command to make the system.sh script executable:
 
 ![system-sh](Image/system-sh.png)
 
+
 ![system-sh1](Image/system-sh1.png)
 
 
@@ -77,7 +78,7 @@ Step 4. Manage Log File Sizes
 
 
 Run sudo nano /etc/logrotate.conf to edit the logrotate configuration file.
-Configure a log rotation scheme that backs up authentication messages to the /var/log/auth.log.
+Configure a log rotatiC:\Users\hacker\CyberSecurity-101A\Homework-5\Image\system-sh1.pngon scheme that backs up authentication messages to the /var/log/auth.log.
 
 Add your config file edits below:
 
