@@ -67,10 +67,10 @@ Command to make the system.sh script executable:
         sudo ./system.sh
 
 
-![system-sh](Image/system-sh.png)
-
-
 ![system-sh1](Image/system-sh1.png)
+
+
+![system-sh](Image/system-sh.png)
 
 
 
