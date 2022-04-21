@@ -69,6 +69,8 @@ Command to make the system.sh script executable:
 
 ![system-sh](Image/system-sh.png)
 
+![system-sh1](Image/system-sh1.png)
+
 
 
 Step 4. Manage Log File Sizes
