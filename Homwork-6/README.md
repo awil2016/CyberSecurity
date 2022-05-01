@@ -5,7 +5,10 @@ Please edit this file by adding the solution commands on the line below the prom
 Save and submit the completed file for your homework submission.
 Step 1: Shadow People
 
-        absd
+      sudo adduser sysd
+
+
+![adduser](image/adduser.png)
         
 Create a secret user named sysd. Make sure this user doesn't have a home folder created:
 
