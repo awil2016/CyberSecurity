@@ -16,71 +16,78 @@ Your solution command here
 
 
 
-Give your secret user a password:
-
-Your solution command here
+Give your secret user a password: 1234
 
 
-
-Give your secret user a system UID < 1000:
-
-Your solution command here
+Give your secret user a system UID < 1000: 700
 
 
+        usermod -u 700 sysd
 
-Give your secret user the same GID:
+![usermpd](image/usermodgroupmod1.png)
+ 
 
-Your solution command here
 
+Give your secret user the same GID: 700
+
+
+        groupmod -g sysd
+
+
+![groupmod](image/groupmod.png)
 
 
 Give your secret user full sudo access without the need for a password:
 
-Your solution command here
+
+        sudo visudo
 
 
-
-Test that sudo access works without your password:
-
-Your bash commands here
+![withoutpassword](image/withoutpasswd.png)
 
 
+Test that sudo access without password
 
+        su sysd
+        sudo -l
+
+![test](image/test.png)
 
 Step 2: Smooth Sailing
 
 
 Edit the sshd_config file:
 
-Your bash commands here
+         ssh sysd@192.168.6.105 -p 2222
 
-
-
+![configuration](image/ssh_into_sysd.png)
 
 Step 3: Testing Your Configuration Update
 
 
 Restart the SSH service:
 
-Your solution command here
+        sudo service ssh restart
+
+![restart](image/ssh_restart.png)
 
 
 
 Exit the root account:
 
-Your solution command here
+        exit
 
 
 
 SSH to the target machine using your sysd account and port 2222:
 
-Your solution command here
+        sudo nano /etc/sshd_config
 
 
 
 Use sudo to switch to the root user:
 
-Your solution command here
+        sudo su
 
 
 
@@ -89,10 +96,14 @@ Step 4: Crack All the Passwords
 
 SSH back to the system using your sysd account and port 2222:
 
-Your solution command here
+        sudo visudo
+
+![ALL](image/visudostep4.png)
 
 
 
 Escalate your privileges to the root user. Use John to crack the entire /etc/shadow file:
 
-Your solution command here
+        john /etc/shadow
+
+![john](image/john_etc_shadow.png)john /etc/shadow
