@@ -29,9 +29,17 @@ Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell 
 
 ![Task-3](image/task-3-enabled.png)
 
-![task=A](image/Turn-on-Module-Logging.png)
+![Task3-A](image/Turn-on-Module-Logging.png)
 
-![task3-](image/Turn-on-PowerShell-Script-Block-Logging.png)
+![Task3-B](image/Turn-on-PowerShell-Script-Block-Logging.png)
+
+![Task3-C](image/Turn-on-PowerShell-Transcription.png)
+
+![Task3-D](image/Turn-on-Script-Execution.png)
+
+![Task3-F](image/Update-Help policy.png)
+
+
 
 Deliverable for Task 4: Submit a copy of your enum_acls.ps1 script.
 
