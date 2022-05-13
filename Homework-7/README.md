@@ -7,7 +7,11 @@ Provide the following:
 Deliverable for Task 1: Take a screenshot of all the GPOs created for this homework assignment. To find these, launch the Group Policy Management tool, select Group Policy Objects, and take a screenshot of the GPOs you've created.
 
 
-Deliverable for Task 2: Submit a screenshot of the different Account Lockout policies in Group Policy Management Editor. It should show the three values you set under the Policy and Policy Setting columns.
+![Task-1images](image/Task-1.png)
+
+![Task-1B]()
+
+Deliverable for Task C:\Users\hacker\CyberSecurity-101A\Homework-7\image\Task-1.png2: Submit a screenshot of the different Account Lockout policies in Group Policy Management Editor. It should show the three values you set under the Policy and Policy Setting columns.
 
 
 Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell policies within the Group Policy Management Editor. Four of these should be enabled.
