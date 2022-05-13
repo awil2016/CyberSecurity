@@ -37,7 +37,7 @@ Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell 
 
 ![Task3-D](image/Turn-on-Script-Execution.png)
 
-![Task3-F](image/Update-Help policy.png)
+![Task3-F](image/Update-Help_policy.png)
 
 
 
