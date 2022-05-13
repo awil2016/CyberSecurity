@@ -27,10 +27,13 @@ Deliverable for Task 1: Take a screenshot of all the GPOs created for this homew
 
 Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell policies within the Group Policy Management Editor. Four of these should be enabled.
 
+![Task-3](image/task-3-enabled.png)
+
+![task=A](image/Turn-on-Module-Logging.png)
+
+![task3-](image/Turn-on-PowerShell-Script-Block-Logging.png)
 
 Deliverable for Task 4: Submit a copy of your enum_acls.ps1 script.
 
-
-Deliverable for Bonus Task 5: Submit a screenshot of the contents of one of your transcribed PowerShell logs or a copy of one of the logs.
 
 ![Task-4](image/step-4.png)
