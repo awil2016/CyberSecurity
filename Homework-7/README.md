@@ -20,6 +20,10 @@ Deliverable for Task 1: Take a screenshot of all the GPOs created for this homew
 
  ![Task-2_images](image/Task-2.png)
 
+ ![lockout-A](image/Turn-on-Module-Logging.png)
+
+ ![louckout-B](image/acountlockout15.png)
+
 
 Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell policies within the Group Policy Management Editor. Four of these should be enabled.
 
