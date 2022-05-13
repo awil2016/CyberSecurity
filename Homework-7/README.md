@@ -32,3 +32,5 @@ Deliverable for Task 4: Submit a copy of your enum_acls.ps1 script.
 
 
 Deliverable for Bonus Task 5: Submit a screenshot of the contents of one of your transcribed PowerShell logs or a copy of one of the logs.
+
+![Task-4](image/step-4.png)
