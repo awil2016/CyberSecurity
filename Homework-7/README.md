@@ -11,9 +11,11 @@ Deliverable for Task 1: Take a screenshot of all the GPOs created for this homew
 
 ![Task-1B](image/Task-1B-TURN_OFFMULTI.png)
 
+![Task-C](image/Task-1C-TURN_OFF_MULTI.png)
 
 
- Deliverable for Task 2: Submit a screenshot of the different Account Lockout policies in Group Policy Management Editor. It should show the three values you set under the Policy and Policy Setting columns.
+
+ Deliverable forC:\Users\hacker\CyberSecurity-101A\Homework-7\image\Task-1C-TURN_OFF_MULTI-.png Task 2: Submit a screenshot of the different Account Lockout policies in Group Policy Management Editor. It should show the three values you set under the Policy and Policy Setting columns.
 
 
 Deliverable for Task 3: Submit a screenshot of the different Windows PowerShell policies within the Group Policy Management Editor. Four of these should be enabled.
