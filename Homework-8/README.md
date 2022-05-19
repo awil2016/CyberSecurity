@@ -45,6 +45,7 @@ i typed this commnand
 than i put in a password hendrix
 
 than i typed whoami 
+than jimi showed up
 
 
 ![who ami](image/phas-3_ssh_jimi.png)
