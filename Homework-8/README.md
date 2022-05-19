@@ -8,22 +8,19 @@ Provide the following for each phase:
 List the steps and commands used to complete the tasks.
 
 
-List any vulnerabilities discovered.
-
-
-List any findings associated to a hacker.
-
-
-Document the mitigation recommendations to protect against the discovered vulnerabilities.
-
-
-Document the OSI layer where the findings were found.
-
-
-For example:
 Phase 1
 
-![]()
+i type Nano Rockstar
+
+        nano rockstar.txt
+
+![Nano's image](image/nano-fping.png)
+
+then i ran this command to check which server is a live in the Hollywood's office
+
+       fping < rockstar.txt 
+
+![Fping](image/step-1_fping.png)
 
 
 
