@@ -57,7 +57,16 @@ than i ran this command
 
     cat hosts
 
+i found the ip address of rollingstone.com
+
 ![hosts](image/phase3_etc_hosts.png)
+
+
+i ran nslookup to find the unknown
+
+        nslookup 98.137.246.8
+
+![nslookup for unknown](image/phase3_unknown.png)
 
 
 
