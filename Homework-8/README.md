@@ -23,11 +23,44 @@ Document the OSI layer where the findings were found.
 For example:
 Phase 1
 
+![]()
+
+
+
+
+
+
+
+Phase 4
+
+these are the commands are used first
+
+        ssh jimi@161.31.96.20
+
+then I logged in password   
+        hendrix
+
+then i type this commands
+
+        cat packetcaptureinfo.txt
+
+then it gave me a link https://drive.google.com/file/d/1ic-CFFGrbruloYrWaw3PvT71elTkh3eF/view?usp=sharing
+
+![downloads](image/phase4_downloads.png)
+
+then i typed HTTP.request.method =="post"
+after that i found the message of the hacker
+
+![hacker'smessage](image/phase4_hackers_message.png)
+
+
+finnally it's Layer 7 in the OSI
+
 
 Determined the IP ranges to scan were 1.1.1.1 and 2.2.2.2, then ran fping against 1.1.1.1 and 2.2.2.2.
 
 
-Used the following commands to run fping:
+Used the followingssh jimi@161.31.96.20 commands to run fping:
 
 fping 1.1.1.1 
 
