@@ -1,10 +1,6 @@
 Your Submission:  "Its the End of the Assessment as We Know It, and I Feel Fine"
 
 
-Guidelines for your Submission:
-Provide the following for each phase:
-
-
 List the steps and commands used to complete the tasks.
 
 
@@ -46,6 +42,7 @@ than i put in a password hendrix
 
 than i typed whoami 
 than jimi showed up
+
 
 
 ![who ami](image/phas-3_ssh_jimi.png)
