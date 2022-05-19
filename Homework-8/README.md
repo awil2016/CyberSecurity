@@ -55,26 +55,3 @@ after that i found the message of the hacker
 
 
 finnally it's Layer 7 in the OSI
-
-
-Determined the IP ranges to scan were 1.1.1.1 and 2.2.2.2, then ran fping against 1.1.1.1 and 2.2.2.2.
-
-
-Used the followingssh jimi@161.31.96.20 commands to run fping:
-
-fping 1.1.1.1 
-
-
-
-
-
-Determined a potential vulnerability that IP 1.1.1.1 is responding.
-
-Since RockStar Corp doesn't want to respond to any requests, this is a vulnerability.
-
-
-
-Recommend to restrict allowing ICMP echo requests against IP 1.1.1.1 to prevent successful responses from PING requests.
-
-
-This occurred on the network layer as Ping uses IP addresses and IPs are used on the Network Layer.
