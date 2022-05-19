@@ -24,6 +24,14 @@ then i ran this command to check which server is a live in the Hollywood's offic
 
 
 
+Phase 2
+
+i ran this to SYN SCAN and also see which port is open
+
+        sudo nmap -sS 161.35.96.20
+
+![SYN SCAN](image/synscan_nmap.png)
+
 
 
 
