@@ -30,7 +30,35 @@ i ran this to SYN SCAN and also see which port is open
 
         sudo nmap -sS 161.35.96.20
 
+i found four ports which were open
+
+
 ![SYN SCAN](image/synscan_nmap.png)
+
+
+
+Phase 3
+
+i typed this commnand
+
+        ssh jimi@161.31.96.20
+than i put in a password hendrix
+
+than i typed whoami 
+
+
+![who ami](image/phas-3_ssh_jimi.png)
+
+
+than i changed directory
+
+        cd /etc/
+than i ran this command
+
+    cat hosts
+
+![hosts](image/phase3_etc_hosts.png)
+
 
 
 
