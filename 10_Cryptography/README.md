@@ -4,15 +4,22 @@
 
         6skd8s
 
+![first_riddle](image/Riddle1.png)
+
 
 # Riddle 2 Key
 
         cy8snd2
 
+![second_riddle](image/riddle2.png)
+
+
 
 # Riddle 3 key
 
-        ud6s98n
+        d6s98n
+
+![third_riddle](image/riddle3A.png)
 
 
 # Riddle 4 key
@@ -27,3 +34,6 @@
 # Riddle 6 key
 
         7skahd6
+
+
+![Riddle_Final_image](image/RIDDLE_FINAL.png)
