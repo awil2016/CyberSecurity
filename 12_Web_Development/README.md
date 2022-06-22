@@ -12,7 +12,8 @@ Answer thHomework: Web Developmente following questions about the HTTP request a
 2.	What are the different parts of an HTTP request?
 
 
-              Request-Line are these; a) Method b) Request-URL c) HTTP-Version of the request      d) Headers and Body 
+        Request-Line are these; a) Method b) Request-URL c) HTTP-Version of the request 
+        d) Headers and Body 
 
 3.	Which part of an HTTP request is optional?
 
