@@ -1,7 +1,9 @@
+Homework: Web Development
+
 Questions
 Before you work through the questions below, please create a new file and record your answers there. This will be your homework deliverable.
 HTTP Requests and Responses
-Answer the following questions about the HTTP request and response process.
+Answer thHomework: Web Developmente following questions about the HTTP request and response process.
 1.	What type of architecture does the HTTP request and response process occur in?
 
       Client-Server Architecture
