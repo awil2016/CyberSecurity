@@ -89,11 +89,11 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC S
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer: Stage 1 - Reconnaissance
+             Answer: Stage 1 - Reconnaissance
 
 3. What kind of attack is indicated?
 
-   Answer: A potential VNC Scan.
+         Answer: A potential VNC Scan.
 
 Snort Rule #2
 
@@ -103,19 +103,19 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 1. Break down the Sort Rule header and explain what is happening.
 
-   Answer: Alerts of any TCP traffic originating from the ports stored in $HTTP_PORTS on the network $EXTERNAL_NET, and going to any port on the network $HOME_NET.
+         Answer: Alerts of any TCP traffic originating from the ports stored in $HTTP_PORTS on the network $EXTERNAL_NET, and going to any port on the network $HOME_NET.
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer: Endpoint Security, specifically Content Security
+        Answer: Endpoint Security, specifically Content Security
 
 3. What kind of attack is indicated?
 
-   Answer: A potential malware bundle being downloaded on the network described by $HOME_NET
+        Answer: A potential malware bundle being downloaded on the network described by $HOME_NET
 
 Snort Rule #3Endpoint Security, specifically Content Security
 
-- Your turn! Write a Snort A potential malware bundle being downloaded on the network described by $HOME_NETrule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
+-        Your turn! Write a Snort A potential malware bundle being downloaded on the network described by $HOME_NETrule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
 
     Answer: cp $EXTERNAL_NET 444 -> $HOME_NET any (msg: "Traffic detected inbound)
 
@@ -158,7 +158,7 @@ By default, these service should be running. If not, then run the following comm
 - Run the command that checks whether or not the `firewalld` service is up and running.
 
     
-    $  systemctl status firewall
+      $  systemctl status firewall
     
 
 
@@ -169,17 +169,25 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured firewall rules:
 
     
-    $ sudo firewall-cmd --list-all
+      
+      
+    
+    
+        
+        
+    
+    
+      $ sudo firewall-cmd --list-all
     ```
 
-- Take note of what Zones and settings are configured. You many need to remove unneeded services and settings.
+ Take note of what Zones and settings are configured. You many need to remove unneeded services and settings.
 
 #### List all supported service types that can be enabled.
 
 - Run the command that lists all currently supported services to see if the service you need is available
 
     
-    $ firewall-cmd --get-services
+        $ firewall-cmd --get-services
     ```
 
 - We can see that the `Home` and `Drop` Zones are created by default.
@@ -236,8 +244,9 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Sales
 
-             ```bash
-            $ sudo firewall-cmd --zone=sales --add-service=https
+        
+        bash
+         $ sudo firewall-cmd --zone=sales --add-service=https
              ```
 
 - Mail
@@ -277,19 +286,19 @@ It's good practice to ensure that your `firewalld` installation remains nailed u
 Now, we'll want to provide truncated listings of all currently **active** zones. This a good time to verify your zone settings.
 
 - Run the command that displays all zone services.
-
-         ```bash
-        $ sudo firewall-cmd --get-active-zones
-        ```
+ 
+          ```bash
+         $ sudo firewall-cmd --get-active-zones
+         ```
 
 
 #### Block an IP address
 
 - Use a rich-rule that blocks the IP address `138.138.0.3`.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+         ```bash
+        $ sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="138.138.0.3" reject'
+        ```
 
 #### Block Ping/ICMP Requests
 
@@ -297,9 +306,9 @@ Harden your network against `ping` scans by blocking `icmp ehco` replies.
 
 - Run the command that blocks `pings` and `icmp` requests in your `public` zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+             ```bash
+             $ sudo firewall-cmd --permanent --add-icmp-block=echo-request --add-icmp-block=echo-reply
+            ```
 
 #### Rule Check
 
@@ -307,13 +316,13 @@ Now that you've set up your brand new `firewalld` installation, it's time to ver
 
 - Run the command that lists all  of the rule settings. Do one command at a time for each zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+         ```bash
+        $ sudo firewall-cmd --info-zone=public
+        $ sudo firewall-cmd --info-zone=web
+        $ sudo firewall-cmd --info-zone=sales
+        $ sudo firewall-cmd --info-zone=mail
+        $ sudo firewall-cmd --info-zone=drop
+        ```
 
 - Are all of our rules in place? If not, then go back and make the necessary modifications before checking again.
 
@@ -330,21 +339,21 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Name and define two ways an IDS connects to a network.
 
-   Answer 1:
+          Answer 1:Network TAP (Test Access Port)
 
-   Answer 2:
+          Answer 2:SPAN (Switched Port Analyzer)
 
 2. Describe how an IPS connects to a network.
 
-   Answer:
+          Answer:Inline with the flow of data, typically between the firewall and network switch.
 
-3. What type of IDS compares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
+3. What type of IDS compSPAN (Switched Port Analyzer)ares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
 
-   Answer:
+            Answer:Signature-based
 
 4. Which type of IDS is beneficial for detecting all suspicious traffic that deviates from the well-known baseline and is excellent at detecting when an attacker probes or sweeps a network?
 
-   Answer:
+            Answer:Anomaly-based
 
 #### Defense in Depth
 
@@ -352,133 +361,74 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     1.  A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.
 
-        Answer:
+              Answer: Perimiter/Physical
 
     2. A zero-day goes undetected by antivirus software.
 
-        Answer:
+              Answer: Application
 
     3. A criminal successfully gains access to HR’s database.
 
-        Answer:
+              Answer: Data
 
     4. A criminal hacker exploits a vulnerability within an operating system.
 
-        Answer:
+             Answer: Endpoint
 
     5. A hacktivist organization successfully performs a DDoS attack, taking down a government website.
 
-        Answer:
+              Answer: Network
 
     6. Data is classified at the wrong classification level.
 
-        Answer:
+              Answer: Policy-Management
 
     7. A state sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.
 
-        Answer:
+              Answer: Perimiter
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
-    Answer:
+             Answer: Hard Drive Encryption
 
 3. Name one method to protect data-in-transit.
 
-    Answer:
+           Answer: TLS(Transport Layer Security)
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
-   Answer:
+           Answer: Geo-tracking
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer:
+         Answer: Secure-boot or a password in the BIOS/UIFI
 
 
 #### Firewall Architectures and Methodologies
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer:
+         Answer:Packet-Filtering Firewall (Stateful)
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer:
+  Answer:Packet-Filtering Firewall (Stateful)
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer:
+           Answer:Application (Proxy) Firewall
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer:
+           Answer:Answer: Packet-Filtering Firewall (Stateless)
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer:
+         Answer: MAC-layer Firewall
 
 
 
-### Bonus Lab: "Green Eggs & SPAM"
-In this activity, you will target spam, uncover its whereabouts, and attempt to discover the intent of the attacker.
- 
-- You will assume the role of a Jr. Security administrator working for the Department of Technology for the State of California.
- 
-- As a junior administrator, your primary role is to perform the initial triage of alert data: the initial investigation and analysis followed by an escalation of high priority alerts to senior incident handlers for further review.
- 
-- You will work as part of a Computer and Incident Response Team (CIRT), responsible for compiling **Threat Intelligence** as part of your incident report.
-
-#### Threat Intelligence Card
-
-**Note**: Log into the Security Onion VM and use the following **Indicator of Attack** to complete this portion of the homework. 
-
-Locate the following Indicator of Attack in Sguil based off of the following:
-
-- **Source IP/Port**: `188.124.9.56:80`
-- **Destination Address/Port**: `192.168.3.35:1035`
-- **Event Message**: `ET TROJAN JS/Nemucod.M.gen downloading EXE payload`
-
-Answer the following:
-
-1. What was the indicator of an attack?
-   - Hint: What do the details of the reveal? 
-
-    Answer: 
 
 
-2. What was the adversarial motivation (purpose of attack)?
-
-    Answer: 
-
-3. Describe observations and indicators that may be related to the perpetrators of the intrusion. Categorize your insights according to the appropriate stage of the cyber kill chain, as structured in the following table.
-
-| TTP | Example | Findings |
-| --- | --- | --- | 
-| **Reconnaissance** |  How did they attacker locate the victim? | 
-| **Weaponization** |  What was it that was downloaded?|
-| **Delivery** |    How was it downloaded?|
-| **Exploitation** |  What does the exploit do?|
-| **Installation** | How is the exploit installed?|
-| **Command & Control (C2)** | How does the attacker gain control of the remote machine?|
-| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?|
-
-
-    Answer: 
-
-
-4. What are your recommended mitigation strategies?
-
-
-    Answer: 
-
-
-5. List your third-party references.
-
-    Answer: 
-
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
