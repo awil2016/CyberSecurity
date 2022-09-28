@@ -1,10 +1,11 @@
 
 
 Submission Guidelines
+
 Provide the following:
 
 
-Deliverable for Task 1: Take a screenshot of all the GPOs created for this homework assignment. To find these, launch the Group Policy Management tool, select Group Policy Objects, and take a screenshot of the GPOs you've created.
+Deliverable for Task 1: Take a screenshot of all the GPOs created for this homework assignment. To find these, launch the Group Policy Management tool, select Group Policy Objects, and take a screenshot of the GPOs you've created
 
 
 ![Task-1images](image/Task-1.png)
