@@ -1,7 +1,7 @@
 # CyberSecurity
 
 Week 6 Homework Submission File: Advanced Bash - Owning the System
-Please edit this file by adding the solution commands on the line below the prompt.
+Please edit this file by adding the solution commands on the line below the prompt
 Save and submit the completed file for your homework submission.
 Step 1: Shadow People
 
@@ -62,7 +62,7 @@ Edit the sshd_config file:
 
 ![configuration](image/ssh_into_sysd.png)
 
-Step 3: Testing Your Configuration Update
+Step 3: Testing Your Configuration Update.
 
 
 Restart the SSH service:
@@ -98,7 +98,7 @@ SSH back to the system using your sysd account and port 2222:
 
         sudo visudo
 
-![ALL](image/visudostep4.png)
+![ALL](image/visudostep4.png).
 
 
 
